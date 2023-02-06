@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="http://code.jquery.co./jquery-1.10.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".btn1").click(function () {
+          $(".bt1").parent().next().css({ color: "#f00" });
+        });
+        $(".btn2").on({
+          "mouseover focus": function () {
+            $(".btn2").parent().next().css({ color: "#0f0" });
+          },
+          "mouseout blur": function () {
+            $(".btn2").parent().next().css({ color: "#000" });
+          },
+        });
+      });
+    </script>
+  </head>
+  <body></body>
+</html>
